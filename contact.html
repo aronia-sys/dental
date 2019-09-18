@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lg="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="max=device-width, initial-scal=1.0">
+    <title>Dental Professional Care - Kontakt</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/dental/dental.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body id="bodycontact">
+<!--PROMO-->
+<div id="promo">
+    <div>
+        <img src="image/UE2.jpg" alt="Fundusze Europejskie" title="Fundusze Europejskie">
+    </div>
+    <div> 
+        <img src="image/pl2.jpg" alt="Rzeczpospolita Polska"  title="Rzeczpospolita Polska">
+    </div>
+    <div>
+        <img src="image/dolnyslask2.jpg" width="700" alt="Dolny Śląsk">
+    </div>
+    <div>
+        <img src="image/UEfun2.jpg" width="700" alt="Unia Europejska">    
+     </div>
+</div>    
+<!--NAV-->    
+<nav id="navtop"> 
+    <ul> 
+        <li> <a href="dental.html">strona główna</a></li>
+        <li class="dropdown context-about"><a href="about.html">o nas<i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <p><a href="team.html">nasz zespół</a></p>
+                    <p><a href="office.html">zdjęcia gabinetu</a></p>
+                </div>
+        </li>
+        <li> <a href="tech.html">technologia</a></li>
+        <li> <a href="price.html">cennik</a></li>
+        <li> <a href="contact.html">kontakt</a></li>
+    </ul>
+</nav>
+
+<!--MIDLLE CONTACT-->
+<div id="middlecontact">
+    <div class="middlecontact1 contact1">
+            <h1>kontakt</h1>
+        <form>
+            <div class="formcontact contact11"><label for="fname">imię</label></div>
+            <div class="formcontact contact12"><input type="text" id="fname" name="fname" placeholder="Imię"></div>
+            <div class="formcontact contact11"><label for="surname">nazwisko</label></div>
+            <div class="formcontact contact12"><input type="text" id="surname" name="surname" placeholder="Nazwisko"></div>
+            <div class="formcontact contact11"><label for="mail">e-mail</label></div>
+            <div class="formcontact contact12"><input type="text" id="mail" name="mail" placeholder="Adress@email.com"></div>
+            <div class="formcontact contact11"><label for="phone">telefon</label></div>
+            <div class="formcontact contact12 break"><input type="number" id="phone" name="phone" placeholder="000 000 000"></div>    
+            <div class="textmessage"><label for="message">treść wiadomości</label></div>
+            <div class="textmessage"><textarea id="message" name="message" placeholder="treść wiadomości"></textarea></div>
+            <button type="submit" id="submit"> <p>Umów wizytę!<i class="far fa-smile-wink"></i></p></button>
+        </form>
+        <div id="maps">
+                <p>znajdź gabinet</p>
+        <div id="googlemap"></div>
+        
+        <script>
+                // Initialize and add the map
+                function initMap() {
+                // The location 
+                var dentalmap = {lat: 51.078640, lng: 17.043759};
+                // The map, centered 
+                var maps = new google.maps.Map(
+                document.getElementById('googlemap'), {zoom: 15, center: dentalmap});
+                // The marker, positioned 
+                var marker = new google.maps.Marker({position: dentalmap, map: maps});
+                }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTexu-XTX3XnCoQiRb0gp1H3p1noeclSM&callback=initMap">
+                </script>
+        </div>
+   
+           
+    </div>
+    <div class="middlecontact1 contact2">
+        <ul>
+            <li>Dental Professional Care</li>
+            <li><i class="fas fa-map-marker-alt"></i>ul. Profesionalna 5, 00-000 Wrocław</li>
+            <li>pon.-pt. 9:00–20:00, sob. 9:00-14:00</li>
+            <li><i class="fas fa-phone-square"></i>+48 71 234 23 23</li>
+            <li><i class="fas fa-phone-square"></i>+48 234 232 402</li>
+            <li><i class="fas fa-envelope"></i>kontakt@dentalproffesionalcare.pl</li>
+        </ul>
+    </div>
+</div>
+            
+
+        
+
+<!--FOOTER-->
+<div class="end">
+    <div class="row" >
+        <div id="bottomlogo">
+            <img src="image/logo.png" alt="DENTAL PROFRSSIONAL CARE" width="1920" height="1080" >
+        </div>
+        <div>
+            <p><i class="fas fa-map-marker-alt"></i>ul. Profesionalna 5</p>
+            <p>00-000 Wrocław,</p>
+            <p>Dolnośląskie 00-000</p>
+        </div>
+        <div>
+            <p class="move"><i class="fas fa-phone-square"></i>+48 71 234 23 23 </p>
+            <p class="move"><i class="fas fa-phone-square"></i>+48 234 232 402 </p>
+            <p><i class="fas fa-envelope"></i>kontakt@dentalproffesionalcare.pl</p>
+        </div>
+    </div>   
+    <span class="others"> 
+            <i class="fab fa-facebook-square fa-lg"></i>
+            <i class="fab fa-twitter-square fa-lg"></i>
+            <i class="fab fa-instagram fa-lg"></i>
+    </span>
+</div>
+
+</body>
+</html>
